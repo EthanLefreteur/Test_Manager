@@ -119,7 +119,8 @@ namespace Test_Manager.Areas.Identity.Pages.Account
             if (ModelState.IsValid)
             {
                 IdentityResult result;
-                var user = Input.isAdmin ? new Administrateur() : new User();
+                /*var user = Input.isAdmin ? new Administrateur() : new User();*/
+                var user = new User();
                 user.fname = Input.fname;
                 user.lname = Input.lname;
 
